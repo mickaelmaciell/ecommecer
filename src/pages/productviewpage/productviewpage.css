@@ -1,0 +1,10 @@
+.product-view-page {
+    padding: 20px;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  

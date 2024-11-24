@@ -1,29 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../logo/logo';
 import './header.css';
 
 function Header() {
   return (
     <header className="header">
-      <div className="header-left">
-        <Logo />
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/products">Produtos</Link>
-          <Link to="/categories">Categorias</Link>
-          <Link to="/orders">Meus Pedidos</Link>
-        </nav>
-      </div>
-      <div className="header-right">
-        <input type="text" placeholder="Pesquisar produto..." />
-        <button type="submit">🔍</button>
-        <div className="redirect-area">
-          <Link to="/register" className="register">Cadastre-se</Link>
-          <Link to="/login" className="login">Entrar</Link>
-          <span className="cart-icon">🛒</span>
+      <div className="header-top">
+        <div className="header-left">
+          <Logo />
+        </div>
+        <div className="header-container">
+          <div className="header-center">
+            <input type="text" placeholder="Pesquisar produto..." />
+            <button type="submit">🔍</button>
+          </div>
+        </div>
+        <div className="header-right">
+          <div className="redirect-area">
+            <NavLink to="/register" className="register">Cadastre-se</NavLink>
+            <NavLink to="/login" className="login">Entrar</NavLink>
+            <span className="cart-icon">🛒</span>
+          </div>
         </div>
       </div>
+      <nav className="header-nav">
+        <NavLink to="/" end className={({ isActive }) => (isActive ? 'active-link' : '')}>Home</NavLink>
+        <NavLink to="/products" className={({ isActive }) => (isActive ? 'active-link' : '')}>Produtos</NavLink>
+        <NavLink to="/categories" className={({ isActive }) => (isActive ? 'active-link' : '')}>Categorias</NavLink>
+        <NavLink to="/orders" className={({ isActive }) => (isActive ? 'active-link' : '')}>Meus Pedidos</NavLink>
+      </nav>
     </header>
   );
 }

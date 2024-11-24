@@ -1,50 +1,116 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .header-left nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #C92071;
-  }
-  
-  .header-right input {
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    padding: 5px 10px;
-  }
-  
-  .header-right button {
-    background-color: #C92071;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-left: 10px;
-  }
-  
-  .redirect-area .register {
-    color: #474747;
-    margin-right: 15px;
-    text-decoration: underline;
-  }
-  
-  .redirect-area .login {
-    background-color: #C92071;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-  
-  .cart-icon {
-    margin-left: 20px;
-    font-size: 1.5rem;
-    color: #C92071;
-  }
-  
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  margin: 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CCC;
+  border-radius: 20px;
+  background-color: #ededed;
+  overflow: hidden;
+}
+
+.header-center input {
+  width: 450px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.header-center button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #C92071;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.redirect-area {
+  display: flex;
+  align-items: center;
+}
+
+.redirect-area .register {
+  color: #474747;
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+.redirect-area .login {
+  background-color: #C92071;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: #C92071;
+}
+
+.header-nav {
+  display: flex;
+  padding: 8px 0px;
+  background-color: #f8f8f8;
+}
+
+.header-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #474747;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.header-nav a.active-link {
+  color: #C92071;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.header-nav a.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #C92071;
+}

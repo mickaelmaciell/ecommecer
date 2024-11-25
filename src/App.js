@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div>
         <Header />
-        <main style={{ minHeight: '80vh', padding: '0', margin: '0' }}>
+        <main style={{ minHeight: "80vh", padding: "0", margin: "0" }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductListingPage />} />

@@ -1,9 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../logo/logo';
 import './header.css';
 
 function Header() {
+  const location = useLocation(); // Pega a localização atual da rota
+
   return (
     <header className="header">
       <div className="header-top">
@@ -25,10 +27,35 @@ function Header() {
         </div>
       </div>
       <nav className="header-nav">
-        <NavLink to="/" end className={({ isActive }) => (isActive ? 'active-link' : '')}>Home</NavLink>
-        <NavLink to="/products" className={({ isActive }) => (isActive ? 'active-link' : '')}>Produtos</NavLink>
-        <NavLink to="/categories" className={({ isActive }) => (isActive ? 'active-link' : '')}>Categorias</NavLink>
-        <NavLink to="/orders" className={({ isActive }) => (isActive ? 'active-link' : '')}>Meus Pedidos</NavLink>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/products"
+          className={() =>
+            location.pathname.startsWith('/products') || location.pathname.startsWith('/product')
+              ? 'active-link'
+              : ''
+          }
+        >
+          Produtos
+        </NavLink>
+        <NavLink
+          to="/categories"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Categorias
+        </NavLink>
+        <NavLink
+          to="/orders"
+          className={({ isActive }) => (isActive ? 'active-link' : '')}
+        >
+          Meus Pedidos
+        </NavLink>
       </nav>
     </header>
   );

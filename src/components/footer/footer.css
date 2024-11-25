@@ -1,29 +1,97 @@
+/* Estilos gerais */
 .footer {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .footer-links h4 {
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: white;
-    display: block;
-  }
-  
-  hr {
-    border: 0.5px solid #666;
-    margin: 20px 0;
-  }
-  
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Seção de logo */
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo-image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #c92071;
+}
+
+/* Seção de links */
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+  display: block;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Linha de separação */
+hr {
+  border: 0.5px solid #444;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* Texto do rodapé */
+.footer p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

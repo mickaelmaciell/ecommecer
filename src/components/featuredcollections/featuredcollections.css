@@ -1,0 +1,104 @@
+.featured-collections {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.featured-collections h2 {
+  font-size: 24px; /* Tamanho maior do título principal */
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* COLEÇÕES */
+.collections-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.collection-card {
+  width: 320px; /* Largura fixa para manter o formato retangular */
+  height: 220px; /* Altura fixa */
+  background-color: #e8f4ff;
+  border-radius: 10px;
+  text-align: left; /* Alinhar os textos à esquerda */
+  position: relative;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collection-card img {
+  width: 100%; /* Imagem ocupa toda a largura */
+  height: 120px; /* Altura fixa */
+  border-radius: 10px;
+  object-fit: cover; /* Garante proporção correta */
+  margin-bottom: 10px;
+  transform: rotate(-5deg); /* Ângulo ajustado conforme exemplo */
+}
+
+.discount-tag {
+  background-color: #d4f34a;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px; /* Posição no topo */
+  left: 10px; /* Posição à esquerda */
+  font-size: 12px;
+}
+
+.collection-card h3 {
+  font-size: 18px; /* Texto maior */
+  color: #333;
+  font-weight: bold;
+  margin: 5px 0; /* Ajuste do espaçamento */
+}
+
+.collection-card button {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px; /* Tamanho do texto */
+  cursor: pointer;
+  align-self: flex-start; /* Botão alinhado à esquerda */
+  transition: background-color 0.3s ease;
+}
+
+.collection-card button:hover {
+  background-color: #d81b60; /* Efeito hover */
+}
+
+/* CATEGORIAS */
+.categories-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 60px; /* Espaço entre categorias */
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  object-fit: contain; /* Garante que as imagens sejam exibidas corretamente */
+}
+
+.category-item p {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+

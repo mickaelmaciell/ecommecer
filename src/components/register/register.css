@@ -1,0 +1,155 @@
+/* Página principal */
+.register-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #d9b4f5, #c7e9f7); /* Fundo exclusivo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header da página de registro */
+  .register-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .register-header img {
+    height: 40px;
+    margin-left: 20px;
+  }
+  
+  /* Conteúdo da página de registro */
+  .register-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .register-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  .register-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .register-container p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .register-container a {
+    color: #c92071;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .register-container form {
+    margin-top: 20px;
+  }
+  
+  .register-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #c92071;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #a5185c;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-login a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 40px;
+  }
+  
+  .social-login img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-login img:hover {
+    transform: scale(1.1);
+  }
+  
+  .register-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    position: relative;
+  }
+  
+  .tenis-esquerdo {
+    position: absolute;
+    right: 40%;
+    transform: rotate(-359.54deg);
+    width: 350px;
+    left: 300px;
+    margin-top: 200px;
+  }
+  
+  .tenis-direito {
+    position: absolute;
+    right: 120px;
+    transform: rotate(-370.54deg);
+    width: 56%;
+    left: 50px;
+  }
+  

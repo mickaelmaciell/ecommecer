@@ -34,7 +34,7 @@ function Login() {
               placeholder="Insira sua senha"
               required
             />
-            <a href="/forgot-password" className="forgot-password">
+            <a href="/recover" className="forgot-password">
               Esqueci minha senha
             </a>
             <button type="submit" className="btn-primary">

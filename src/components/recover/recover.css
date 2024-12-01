@@ -1,0 +1,136 @@
+/* Estilos para a página de recuperação de senha */
+.recover-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9fafe;
+  }
+  
+  /* Cabeçalho */
+  .recover-header {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recover-logo {
+    height: 50px;
+  }
+  
+  /* Container principal */
+  .recover-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+  
+  /* Div Esquerda */
+  .recover-left {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recover-image {
+    width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+  }
+  
+  /* Div Direita */
+  .recover-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recover-card {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Título e descrição */
+  .recover-top h1 {
+    color: #CB2072;
+    font-size: 30px;
+  }
+  
+  .recover-top p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Formulário */
+  .recover-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .recover-middle label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .recover-middle input {
+    padding: 12px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .recover-middle input::placeholder {
+    color: #ccc;
+  }
+  
+  /* Botões e links */
+  .recover-bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .recover-button {
+    background-color: #CB2072;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .recover-button:hover {
+    background-color: #eb5da1;
+  }
+  
+  .recover-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .recover-link:hover {
+    color: #eb5da1;
+  }

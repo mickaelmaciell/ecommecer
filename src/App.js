@@ -7,12 +7,14 @@ import Login from "./components/login/login"; // Importe o componente Login
 import Register from "./components/register/register"; // Importe o componente Register
 import ProductListingPage from "./pages/productlistingpage/productlistingpage";
 import ProductViewPage from "./pages/productviewpage/productviewpage";
+import Recover from "./components/recover/recover";
+import Form from "./components/form/form"; // Importe o componente Form
 
 function App() {
   // Função para decidir a classe de layout
   const LayoutWrapper = ({ children }) => {
     const location = useLocation();
-    const authRoutes = ["/login", "/register"]; // Rotas com estilo exclusivo
+    const authRoutes = ["/login", "/register", "/recover", "/form"]; // Rotas com estilo exclusivo
 
     // Adiciona uma classe CSS específica para login/registro
     const className = authRoutes.includes(location.pathname) ? "auth-layout" : "main-layout";
@@ -23,7 +25,7 @@ function App() {
   // Função para decidir se o Header será exibido
   const ShowHeader = () => {
     const location = useLocation();
-    const noHeaderRoutes = ["/login", "/register"]; // Rotas onde o Header NÃO deve aparecer
+    const noHeaderRoutes = ["/login", "/register", "/recover", "/form"]; // Rotas onde o Header NÃO deve aparecer
 
     if (noHeaderRoutes.includes(location.pathname)) {
       return null;
@@ -43,6 +45,8 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/products" element={<ProductListingPage />} />
             <Route path="/product/:id" element={<ProductViewPage />} />
+            <Route path="/recover" element={<Recover />} /> {/* Adicionada rota de recuperação */}
+            <Route path="/form" element={<Form />} /> {/* Adicionada rota para o formulário */}
           </Routes>
         </main>
         <Footer />

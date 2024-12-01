@@ -1,13 +1,20 @@
 import React from "react";
 import "./register.css";
-import { Link } from "react-router-dom"; // Importa o Link para navegação
+import { Link, useNavigate } from "react-router-dom"; // Importa o Link e useNavigate para navegação
 import tenisAmareloEsquerdo from "../../assets/tenis-amarelo-esquerdo.png";
 import tenisAmareloDireito from "../../assets/tenis-amarelo-direito.png";
 import gmailLogo from "../../assets/gmail.png";
 import facebookLogo from "../../assets/facebook.png";
 import logoHeader from "../../assets/logo-header.png"; // Importe a imagem do logo
 
-function Register() { // Alterei o nome do componente para "Register"
+function Register() {
+  const navigate = useNavigate(); // Hook para navegação programática
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Evita o recarregamento da página
+    navigate("/form"); // Redireciona para a página de formulário
+  };
+
   return (
     <div className="register-page">
       {/* Header personalizado para a página de registro */}
@@ -20,7 +27,7 @@ function Register() { // Alterei o nome do componente para "Register"
           <p>
             Já possui uma conta? <Link to="/login">Entre aqui.</Link>
           </p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email *</label>
             <input
               type="email"
@@ -52,4 +59,4 @@ function Register() { // Alterei o nome do componente para "Register"
   );
 }
 
-export default Register; // Corrigido para "Register"
+export default Register;

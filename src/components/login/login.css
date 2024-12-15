@@ -1,4 +1,3 @@
-/* Página principal */
 .login-page {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +8,6 @@
   align-items: center;
 }
 
-/* Header da página de login */
 .login-header {
   display: flex;
   justify-content: flex-start;
@@ -26,7 +24,6 @@
   margin-left: 20px;
 }
 
-/* Conteúdo da página de login */
 .login-content {
   display: flex;
   justify-content: space-between;
@@ -148,7 +145,6 @@
   position: relative;
 }
 
-/* Estilo para o tênis esquerdo */
 .tenis-esquerdo {
   position: absolute;
   right: 40%;
@@ -158,7 +154,6 @@
   margin-top: 200px;
 }
 
-/* Estilo para o tênis direito */
 .tenis-direito {
   position: absolute;
   right: 120px;

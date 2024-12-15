@@ -1,99 +1,173 @@
-* {
-  margin: 0;
-  padding: 0;
+/* CSS individual para TrendingProducts */
+
+.trending-products-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.trending-products {
-    padding: 40px;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .trending-products h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
-    row-gap: 20px; /* Espaçamento vertical entre os cards */
-    column-gap: 80px; /* Espaçamento horizontal entre os cards */
-  }
-  
-  .product-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Mantém as cores dos textos */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    max-width: 250px; /* Define uma largura máxima menor */
-  }
-  
-  .product-card:hover {
-    transform: translateY(-5px); /* Elevação do card ao passar o mouse */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
-  }
-  
-  .image-container {
-    position: relative;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    transform: rotate(30deg);
-    margin-top: 45px; /* Ajuste a margem para dar espaço ao conteúdo */
-  }
-  
-  .discount {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #d4f1b4;
-    color: #333;
-    padding: 5px 10px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .product-info {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  .product-info .category {
-    font-size: 0.8rem;
-    color: #888;
-  }
-  
-  .product-info .product-name {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .product-info .old-price {
-    font-size: 0.9rem;
-    color: #999;
-    text-decoration: line-through;
-  }
-  
-  .product-info .new-price {
-    font-size: 1.2rem;
-    color: #e91e63;
-    font-weight: bold;
-  }
-  
+
+.trending-products-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trending-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
+  row-gap: 20px; /* Espaçamento vertical entre os cards */
+  column-gap: 80px; /* Espaçamento horizontal entre os cards */
+}
+
+.trending-product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Mantém as cores dos textos */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  max-width: 250px; /* Define uma largura máxima menor */
+}
+
+.trending-product-card:hover {
+  transform: translateY(-5px); /* Elevação do card ao passar o mouse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+.trending-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.trending-image-container img {
+  width: 100%;
+  height: auto;
+  transform: rotate(30deg);
+  margin-top: 45px;
+}
+
+.trending-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d4f1b4;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.trending-product-info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.trending-product-category {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.trending-product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.trending-old-price {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.trending-new-price {
+  font-size: 1.2rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.special-offer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.offer-image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.ellipse-bg {
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  max-width: 300px;
+}
+
+.nike-shoes {
+  position: relative;
+  width: 250px;
+  z-index: 2;
+}
+
+.offer-content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.offer-tag {
+  font-size: 1rem;
+  color: #c92071;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.offer-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.offer-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.offer-button {
+  background-color: #c92071;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #a5185c;
+}

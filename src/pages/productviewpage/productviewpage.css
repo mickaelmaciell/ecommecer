@@ -3,76 +3,169 @@
   background-color: #f9f9f9;
 }
 
-.breadcrumb {
+.product-view-page .breadcrumb {
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 20px;
 }
 
-.breadcrumb a {
+.product-view-page .breadcrumb a {
   text-decoration: none;
   color: #e91e63;
 }
 
-.product-details {
+.product-view-page .product-details {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-image img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.product-view-page .product-frame {
+  width: 60%;
+  height: 80%;
+  background-color: #f4e3ff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.product-info {
+.product-view-page .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-view-page .left-arrow {
+  left: 10px;
+}
+
+.product-view-page .right-arrow {
+  right: 10px;
+}
+
+.product-view-page .arrow:hover {
+  background-color: #c2185b;
+}
+
+.product-view-page .product-thumbnail {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.product-view-page .product-info {
   max-width: 500px;
+  margin-right: 200px;
 }
 
-.product-info h1 {
-  font-size: 2rem;
+.product-view-page .product-info h1 {
+  font-size: 1.8rem;
   color: #333;
+  text-align: left;
+  font-weight: bold;
 }
 
-.product-info .rating {
+.product-view-page .rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+
+.product-view-page .star {
+  color: #ffcc00;
+  font-size: 1.5rem;
+}
+
+.product-view-page .star.unfilled {
+  color: #ccc;
+}
+
+.product-view-page .rating-square {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #888;
-  margin: 10px 0;
+  margin-left: 8px;
 }
 
-.product-info .price {
+.product-view-page .review-count {
+  margin-left: 10px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.product-view-page .product-info .price {
   font-size: 1.5rem;
   color: #e91e63;
   margin: 20px 0;
 }
 
-.product-info .old-price {
+.product-view-page .product-info .old-price {
   text-decoration: line-through;
   color: #999;
   margin-right: 10px;
 }
 
-.sizes, .colors {
+.product-view-page .sizes,
+.product-view-page .colors {
   margin: 20px 0;
 }
 
-.size-button, .color-button {
+.product-view-page .size-button {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
   cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
 }
 
-.color-button {
+.product-view-page .size-button.selected {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.product-view-page .size-button:hover {
+  background-color: #f9f9f9;
+}
+
+.product-view-page .color-button {
   width: 30px;
   height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.buy-button {
+.product-view-page .color-button:hover {
+  transform: scale(1.1);
+}
+
+.product-view-page .buy-button {
   background-color: #e91e63;
   color: #fff;
   border: none;
@@ -81,4 +174,139 @@
   cursor: pointer;
   font-size: 1.2rem;
   margin-top: 20px;
+}
+
+.product-view-page .products-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-view-page .product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  width: 200px; 
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.product-view-page .product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-view-page .product-card img {
+  width: 150px; 
+  height: auto;
+  margin: 0 auto;
+}
+
+.product-view-page .product-name {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-view-page .old-price {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product-view-page .new-price {
+  font-size: 1.2rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.product-view-page .product-suggestions {
+  margin-top: 20px;
+}
+
+.product-view-page .product-suggestions h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-view-page .suggestions-grid {
+  display: flex;
+  margin-right: 600px;
+  justify-content: center; 
+  gap: 45px; 
+  flex-wrap: wrap;
+}
+
+.product-view-page .suggestion-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+
+.product-view-page .suggestion-card:hover {
+  transform: scale(1.05);
+}
+
+.product-view-page .suggestion-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-view-page .related-products {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-view-page .related-products h2 {
+  display: flex;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.product-view-page .related-products-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-right: 300px;
+}
+
+.product-view-page .related-product-card img {
+  width: 80%;
+}
+
+.product-view-page .related-product-card .old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .product-view-page .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-view-page .product-frame {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-view-page .product-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-view-page .products-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }

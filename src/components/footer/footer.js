@@ -1,13 +1,12 @@
 import React from 'react';
 import './footer.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import LogoFooter from '../../assets/logo-footer.png'; // Caminho correto da imagem da logo
+import LogoFooter from '../../assets/logo-footer.png'; 
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Logo e descrição */}
         <div className="footer-logo">
           <img src={LogoFooter} alt="Digital Store Logo" className="footer-logo-image" />
           <p className="footer-description">
@@ -26,7 +25,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Links de Informação e Categorias */}
         <div className="footer-links">
           <div className="footer-column">
             <h4>Informação</h4>
@@ -54,10 +52,8 @@ function Footer() {
         </div>
       </div>
 
-      {/* Linha de separação */}
       <hr />
 
-      {/* Texto do rodapé */}
       <p className="footer-copyright">
         © 2024 Digital Store
       </p>

@@ -1,15 +1,13 @@
-/* Página principal */
 .register-page {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #d9b4f5, #c7e9f7); /* Fundo exclusivo */
+    background: linear-gradient(180deg, #d9b4f5, #c7e9f7); 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  /* Header da página de registro */
   .register-header {
     display: flex;
     justify-content: flex-start;
@@ -26,7 +24,6 @@
     margin-left: 20px;
   }
   
-  /* Conteúdo da página de registro */
   .register-content {
     display: flex;
     justify-content: space-between;

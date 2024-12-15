@@ -4,7 +4,7 @@ import supremeImage from "../../assets/supreme.png";
 import adidasImage from "../../assets/tenis-black-white.png";
 import beatsImage from "../../assets/fone-black.png";
 
-// Importação correta das imagens de categorias
+
 import camisaImage from "../../assets/colecao-camisa.png";
 import calcaImage from "../../assets/colecao-calça.png";
 import boneImage from "../../assets/colecao-bone.png";

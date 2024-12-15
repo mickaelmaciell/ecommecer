@@ -35,10 +35,10 @@
   margin: 10px 0;
 }
 .carousel-container .titulo-imagem .carousel-content .subtitle{
-  font-size: 1rem; /* Tamanho menor */
+  font-size: 1rem;
   font-weight: bold;
-  color: #C92071; /* Cor semelhante */
-  margin-bottom: 10px; /* Espaçamento entre o subtítulo e o título principal */
+  color: #C92071;
+  margin-bottom: 10px;
 }
 
 .carousel-content button {

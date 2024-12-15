@@ -4,6 +4,6 @@
   }
   
   .logo.footer img {
-    filter: brightness(0) invert(1); /* Para contraste no rodapé */
+    filter: brightness(0) invert(1);
   }
   

@@ -1,23 +1,23 @@
 import React from "react";
 import "./register.css";
-import { Link, useNavigate } from "react-router-dom"; // Importa o Link e useNavigate para navegação
+import { Link, useNavigate } from "react-router-dom";
 import tenisAmareloEsquerdo from "../../assets/tenis-amarelo-esquerdo.png";
 import tenisAmareloDireito from "../../assets/tenis-amarelo-direito.png";
 import gmailLogo from "../../assets/gmail.png";
 import facebookLogo from "../../assets/facebook.png";
-import logoHeader from "../../assets/logo-header.png"; // Importe a imagem do logo
+import logoHeader from "../../assets/logo-header.png";
 
 function Register() {
-  const navigate = useNavigate(); // Hook para navegação programática
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Evita o recarregamento da página
-    navigate("/form"); // Redireciona para a página de formulário
+    e.preventDefault();
+    navigate("/form");
   };
 
   return (
     <div className="register-page">
-      {/* Header personalizado para a página de registro */}
+      {}
       <header className="register-header">
         <img src={logoHeader} alt="Logo Digital Store" className="register-logo" />
       </header>

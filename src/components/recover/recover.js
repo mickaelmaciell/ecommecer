@@ -1,25 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importe o Link para navegação
-import './recover.css'; // Importe o arquivo CSS do componente
-import logoHeader from "../../assets/logo-header.png"; // Caminho para o logo
-import password from "../../assets/password.gif"; // Caminho para a imagem de recuperação
+import { Link } from 'react-router-dom';
+import './recover.css';
+import logoHeader from "../../assets/logo-header.png";
+import password from "../../assets/password.gif";
 
 function Recover() {
   return (
     <div className="recover-page">
-      {/* Cabeçalho com logo */}
+      {}
       <header className="recover-header">
         <img src={logoHeader} alt="Logo Digital Store" className="recover-logo" />
       </header>
 
-      {/* Conteúdo principal */}
+      {}
       <div className="recover-container">
-        {/* Div Esquerda: Imagem de recuperação */}
+        {}
         <div className="recover-left">
           <img src={password} alt="Recuperação de Senha" className="recover-image" />
         </div>
 
-        {/* Div Direita: Card de recuperação */}
+        {}
         <div className="recover-right">
           <div className="recover-card">
             <div className="recover-top">

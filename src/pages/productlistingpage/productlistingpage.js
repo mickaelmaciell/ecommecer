@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import "./productlistingpage.css";
 import tenisSwiss from "../../assets/tenis-swiss.png";
 
@@ -77,7 +78,11 @@ function ProductListingPage() {
           </div>
           <div className="products-grid">
             {products.map((product, index) => (
-              <div key={index} className="product-card">
+              <Link
+                key={index}
+                to={`/product/${product.id}`} 
+                className="product-card"
+              >
                 <div className="image-container">
                   <span className="discount">{product.discount}</span>
                   <img src={product.image} alt={product.name} />
@@ -88,7 +93,7 @@ function ProductListingPage() {
                   <p className="old-price">{product.oldPrice}</p>
                   <p className="new-price">{product.newPrice}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </main>

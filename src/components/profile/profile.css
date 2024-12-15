@@ -1,0 +1,151 @@
+.profile-page {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .profile-sidebar {
+    width: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-sidebar li {
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-sidebar li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-sidebar li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .profile-sidebar .active {
+    font-weight: bold;
+    color: #c92071;
+  }
+  
+  .profile-content {
+    width: 75%;
+    margin-left: 20px;
+  }
+  
+  .orders-content,
+  .details-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-content h2,
+  .details-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .order-product img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .order-details p {
+    margin: 0;
+    color: #333;
+  }
+  
+  .order-status {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .status-in-transit {
+    color: #ff9800;
+    background-color: #fff8e1;
+  }
+  
+  .status-completed {
+    color: #4caf50;
+    background-color: #e8f5e9;
+  }
+  
+  .status-cancelled {
+    color: #f44336;
+    background-color: #ffebee;
+  }
+  
+  .details-content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .details-content p strong {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .details-content h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .profile-content {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  

@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+#A pagina home foi dividida em 3 partes para esse print.
+![p1](https://github.com/user-attachments/assets/1150b72b-d3d8-4022-b12d-ca86ce4cfc87)
+![p2](https://github.com/user-attachments/assets/b96445df-e46f-4605-a39d-d7f8b0cf37c7)
+![p3](https://github.com/user-attachments/assets/ad546c83-270a-4696-a303-4f7aba23b19d)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Ecommecer - Aplicação de E-commerce
 
-In the project directory, you can run:
+Este é um projeto de e-commerce desenvolvido utilizando React, com uma estrutura modular para componentes e páginas.
 
-### `npm start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Biblioteca para construção de interfaces.
+- **CSS Modules**: Estilização individual por componente.
+- **React Router**: Navegação entre as páginas.
+- **LocalStorage**: Para simular a autenticação e o armazenamento de dados do usuário.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📁 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Diretório `src/`
 
-### `npm run build`
+```plaintext
+├── assets/                 # Imagens utilizadas no projeto
+├── components/             # Componentes reutilizáveis
+│   ├── ordersuccess/       # Tela de sucesso do pedido
+│   ├── profile/            # Página do perfil do usuário
+│   ├── finalizepurchase/   # Tela de finalização de compra
+│   ├── recover/            # Página de recuperação de senha
+│   ├── register/           # Tela de registro de usuário
+│   ├── login/              # Tela de login
+│   ├── header/             # Cabeçalho com navegação
+│   ├── footer/             # Rodapé
+│   ├── form/               # Formulário de cadastro
+│   ├── logo/               # Componente do logo
+│   ├── featuredcollections/ # Coleções em destaque
+│   ├── trendingproducts/   # Produtos em alta
+├── pages/                  # Páginas principais do app
+│   ├── checkoutpage/       # Página de checkout
+│   ├── homepage/           # Página inicial
+│   ├── productviewpage/    # Página de detalhes do produto
+│   ├── productlistingpage/ # Página de listagem de produtos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Funcionalidades
+Autenticação Simulada: Utilizando LocalStorage para armazenar informações do usuário.
+Carrinho de Compras: Sistema funcional de adicionar e exibir itens no carrinho.
+Pesquisa de Produtos: Sistema de pesquisa que redireciona para a página de listagem de produtos.
+Página de Perfil: Visualização de informações do usuário com opções de "Meus Pedidos" e "Minhas Informações".
+Páginas de Produtos: Listagem, detalhes e destaque de produtos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📜 Scripts Disponíveis
+No diretório do projeto, você pode executar:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
+Inicia o projeto no modo de desenvolvimento.
+Abra http://localhost:3000 para visualizar no navegador.
 
-### `npm run eject`
+npm run build
+Cria uma versão otimizada para produção na pasta build.
+Essa versão está pronta para ser implantada.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🌟 Demonstração das Páginas
+Página Inicial
+Coleções em Destaque
+Produtos em Alta
+Página de Listagem de Produtos
+Filtros por Marca, Categoria e Gênero.
+Ordenação por relevância, menor preço e maior preço.
+Página de Detalhes do Produto
+Informações detalhadas e sugestões de produtos relacionados.
+Página do Perfil
+Opções de:
+"Meus Pedidos"
+"Minhas Informações"
+Página de Carrinho
+Visualização de produtos adicionados ao carrinho.
+Valor total do carrinho.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📂 Instalação
+Clone este repositório:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copiar código
+git clone https://github.com/mickaelmaciell/ecommecer.git
+Entre no diretório do projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copiar código
+cd ecommecer
+Instale as dependências:
 
-## Learn More
+bash
+Copiar código
+npm install
+Execute o projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copiar código
+npm start
+🤝 Contribuição
+Sinta-se à vontade para contribuir com melhorias, reportar bugs ou propor novas funcionalidades. Para isso:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Faça um fork do projeto.
+Crie uma branch para sua feature:
+bash
+Copiar código
+git checkout -b feature/nome-da-feature
+Faça suas alterações e commit:
+bash
+Copiar código
+git commit -m "Descrição da feature"
+Envie para o repositório remoto:
+bash
+Copiar código
+git push origin feature/nome-da-feature
+Crie um Pull Request no repositório principal.
+📄 Licença
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
 
-### Code Splitting
+✨ Autor
+Desenvolvido por Mickael Maciel, Ana Nóbrega, Abraão Nascimento. 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+yaml
+Copiar código
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### O que foi ajustado:
 
-### Making a Progressive Web App
+- Removida a parte genérica do `Create React App`.
+- Adicionada uma descrição clara do projeto.
+- Detalhamento da estrutura de arquivos.
+- Inclusão das principais funcionalidades.
+- Instruções de instalação e contribuição.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se precisar de ajustes ou algo mais específico, é só falar! 😊

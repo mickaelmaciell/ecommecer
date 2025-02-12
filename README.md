@@ -1,7 +1,3 @@
-LINK EXPLICATIVO DA PAGINA: https://youtu.be/yyy59gnIu_g
-
-[Documentação do Projeto - FrontEnd.pdf](https://github.com/user-attachments/files/18187658/Documentacao.do.Projeto.-.FrontEnd.pdf)
-
 
 #A pagina home foi dividida em 3 partes para esse print.
 ![p1](https://github.com/user-attachments/assets/1150b72b-d3d8-4022-b12d-ca86ce4cfc87)
@@ -122,9 +118,6 @@ git push origin feature/nome-da-feature
 Crie um Pull Request no repositório principal.
 📄 Licença
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
-
-✨ Autor
-Desenvolvido por Mickael Maciel, Ana Nóbrega, Abraão Nascimento. 🚀
 
 yaml
 Copiar código
